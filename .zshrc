@@ -43,8 +43,6 @@ export PATH=$PATH:/home/tesuji/scripts
 
 source $ZSH/oh-my-zsh.sh
 
-autoload -U zmv
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -73,8 +71,13 @@ fi
 alias ls='ls --color=auto'
 alias l='ls -lh --group-directories-first'
 alias ll='l -a'
+
+# typofixes
 alias cd..='cd ..'
 alias naon='nano'
+
+# more flexible move
+autoload -U zmv
 alias mmv='noglob zmv -W'
 
 function chpwd(){
