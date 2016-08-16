@@ -83,7 +83,7 @@ alias mmv='noglob zmv -W'
 
 function chpwd(){
     emulate -LR zsh
-    l
+    ls
 }
 
 # VIM Mode
