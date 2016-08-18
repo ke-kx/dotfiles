@@ -7,7 +7,7 @@ export ZSH=/home/tesuji/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #interesting themes: avit, spaceship, strug
 ZSH_THEME="spaceship"
-SPACESHIP_PROMPT_TRUNC=0
+SPACESHIP_PROMPT_TRUNC=5
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
