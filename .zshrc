@@ -72,6 +72,7 @@ fi
 alias ls='ls --color=auto'
 alias l='ls -lh --group-directories-first'
 alias ll='l -a'
+alias open='open_command'
 
 # typofixes
 alias cd..='cd ..'
@@ -91,8 +92,8 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # History Control (Arrow up and down use already entered text)
-bindkey "^[OA" history-beginning-search-backward
-bindkey "^[OB" history-beginning-search-forward
+bindkey "^[OA" history-search-backward
+bindkey "^[OB" history-search-forward
 bindkey -M vicmd 'k' history-beginning-search-backward
 bindkey -M vicmd 'j' history-beginning-search-forward
 
