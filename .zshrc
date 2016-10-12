@@ -37,7 +37,7 @@ SPACESHIP_PROMPT_TRUNC=5
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitfast archlinux systemd zsh-autosuggestions colored-man-pages sudo wd)
+plugins=(git gitfast archlinux systemd zsh-autosuggestions colored-man-pages sudo wd common-aliases)
 
 # User configuration
 export PATH=$PATH:/home/tesuji/scripts
