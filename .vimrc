@@ -14,3 +14,7 @@ set smarttab
 set expandtab
 set nu
 set autoindent
+
+" searching options
+set smartcase
+set ignorecase
