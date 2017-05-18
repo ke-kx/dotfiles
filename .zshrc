@@ -78,6 +78,11 @@ alias open='open_command'
 alias cd..='cd ..'
 alias naon='nano'
 
+# use normal commands instead of those provided by common aliases
+unalias mv
+unalias cp
+unalias rm
+
 # more flexible move
 autoload -U zmv
 alias mmv='noglob zmv -W'
