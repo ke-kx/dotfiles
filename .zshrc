@@ -40,7 +40,7 @@ SPACESHIP_PROMPT_TRUNC=5
 plugins=(git gitfast archlinux systemd zsh-autosuggestions colored-man-pages sudo wd common-aliases)
 
 # User configuration
-export PATH=$PATH:/home/tesuji/repos/scripts
+export PATH=$PATH:$HOME/repos/scripts
 
 # Check for system update if script is in PATH
 if system_update_script="$(type -p system-update-promt)" && [ -n "$system_update_script" ]; then
