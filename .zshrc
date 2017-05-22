@@ -43,11 +43,11 @@ plugins=(git gitfast archlinux systemd zsh-autosuggestions colored-man-pages sud
 export PATH=$PATH:$HOME/repos/scripts
 
 # Check for system update if script is in PATH
-if system_update_script="$(type -p system-update-promt)" && [ -n "$system_update_script" ]; then
+if system_update_script="$(type -p system-update-prompt.sh)" && [ -n "$system_update_script" ]; then
     # Set the amount of days past for system update promt
     export UPDATE_SYSTEM_DAYS=1
     # Run the script
-    system-update-promt
+    system-update-prompt.sh
 fi
 
 source $ZSH/oh-my-zsh.sh
