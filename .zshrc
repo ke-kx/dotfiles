@@ -40,7 +40,15 @@ SPACESHIP_PROMPT_TRUNC=5
 plugins=(git gitfast archlinux systemd zsh-autosuggestions colored-man-pages sudo wd common-aliases)
 
 # User configuration
-export PATH=$PATH:/home/tesuji/scripts
+export PATH=$PATH:/home/tesuji/repos/scripts
+
+# Check for system update if script is in PATH
+if system_update_script="$(type -p system-update-promt)" && [ -n "$system_update_script" ]; then
+    # Set the amount of days past for system update promt
+    export UPDATE_SYSTEM_DAYS=1
+    # Run the script
+    system-update-promt
+fi
 
 source $ZSH/oh-my-zsh.sh
 
