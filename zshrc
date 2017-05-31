@@ -86,6 +86,7 @@ alias open='open_command'
 # typofixes
 alias cd..='cd ..'
 alias naon='nano'
+alias subl='subl3'
 
 # use normal commands instead of those provided by common aliases
 unalias mv
