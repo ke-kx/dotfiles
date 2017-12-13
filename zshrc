@@ -46,7 +46,7 @@ export PATH=$PATH:$HOME/repos/scripts
 # Check for system update if script is in PATH
 if system_update_script="$(type -p system-update-prompt.sh)" && [ -n "$system_update_script" ]; then
     # Set the amount of days past for system update promt
-    export UPDATE_SYSTEM_DAYS=1
+    export UPDATE_SYSTEM_DAYS=3
     # Run the script
     system-update-prompt.sh
 fi
