@@ -1,1 +1,2 @@
 changed eclipse desktop file /usr/share/application/eclipse.desktop: Exec=eclipse --launcher.GTK_version 2 to fix HiDPI scaling issues
+additionally for spotify.desktop: Exec=spotify %U --force-device-scale-factor=2
