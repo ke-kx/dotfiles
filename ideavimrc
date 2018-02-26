@@ -1,0 +1,21 @@
+" switch y and z keys to accustom for german keyboard...
+noremap y z
+noremap z y
+noremap! y z
+noremap! z y
+
+set timeoutlen=500
+let mapleader=" "
+
+" New line without insert
+nnoremap <leader>o o<Esc>k
+nnoremap <leader>O O<ESC>j
+
+" Keybinding for yanking and pasting from system keyboard
+noremap <leader>p "+p
+noremap <leader>P "+P
+noremap <leader>z "+y
+noremap <leader>d "+d
+
+" (relative) line numbers
+set relativenumber
