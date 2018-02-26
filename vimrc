@@ -188,6 +188,7 @@ set invlist
 " Search
 set ignorecase
 set smartcase
+set hlsearch
 
 " folding
 set foldmethod=syntax
