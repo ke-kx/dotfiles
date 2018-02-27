@@ -52,16 +52,6 @@ if system_update_script="$(type -p system-update-prompt.sh)" && [ -n "$system_up
     system-update-prompt.sh
 fi
 
-# fzf
-if [ -e /usr/share/fzf/completion.zsh ]; then
-    source /usr/share/fzf/key-bindings.zsh
-    source /usr/share/fzf/completion.zsh
-    export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
-    export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-    export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
-    export FZF_DEFAULT_OPTS=' --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108 --color info:108,prompt:109,spinner:108,pointer:168,marker:168'
-fi
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -131,3 +121,15 @@ bindkey "${terminfo[kdch1]}" delete-char
 
 # Open new tab in current directory
 [[ -f /etc/profile.d/vte.sh ]] && . /etc/profile.d/vte.sh
+
+# fzf
+if [ -e /usr/share/fzf/completion.zsh ]; then
+    echo "inside"
+    source /usr/share/fzf/key-bindings.zsh
+    source /usr/share/fzf/completion.zsh
+    export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
+    export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+    export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
+    export FZF_DEFAULT_OPTS=' --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108 --color info:108,prompt:109,spinner:108,pointer:168,marker:168'
+fi
+
