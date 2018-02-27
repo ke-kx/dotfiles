@@ -77,8 +77,13 @@ call plug#end()
 " ------------------------------------------------------------------------------
 
 " switch y and z keys to accustom for German keyboard...
-noremap y z
 noremap z y
+noremap y z
+
+" vim-unimpaired overrides these, so explicitly map them correctly
+autocmd!
+autocmd VimEnter * unmap yo
+autocmd VimEnter * unmap yO
 
 set timeoutlen=500
 let mapleader=" "
