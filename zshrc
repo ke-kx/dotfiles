@@ -124,7 +124,6 @@ bindkey "${terminfo[kdch1]}" delete-char
 
 # fzf
 if [ -e /usr/share/fzf/completion.zsh ]; then
-    echo "inside"
     source /usr/share/fzf/key-bindings.zsh
     source /usr/share/fzf/completion.zsh
     export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
