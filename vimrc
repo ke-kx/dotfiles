@@ -79,8 +79,6 @@ call plug#end()
 " switch y and z keys to accustom for German keyboard...
 noremap y z
 noremap z y
-noremap! y z
-noremap! z y
 
 set timeoutlen=500
 let mapleader=" "
@@ -111,6 +109,9 @@ cnoremap <C-h> <Left>
 cnoremap <C-l> <Right>
 cnoremap <C-k> <Up>
 cnoremap <C-j> <Down>
+
+" toggling search highlight setting
+noremap <leader>hs :set hlsearch! <cr>
 
 " ------------------------------------------------------------------------------
 " ------------------------------ Plugin Settings -------------------------------
@@ -188,7 +189,6 @@ set invlist
 " Search
 set ignorecase
 set smartcase
-set hlsearch
 
 " folding
 set foldmethod=syntax
