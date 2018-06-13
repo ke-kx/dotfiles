@@ -77,13 +77,8 @@ call plug#end()
 " ------------------------------------------------------------------------------
 
 " switch y and z keys to accustom for German keyboard...
-noremap z y
-noremap y z
-
-" vim-unimpaired overrides these, so explicitly map them correctly
-autocmd!
-autocmd VimEnter * unmap yo
-autocmd VimEnter * unmap yO
+" noremap z y
+" noremap y z
 
 set timeoutlen=500
 let mapleader=" "
@@ -101,7 +96,7 @@ nnoremap <C-l> <C-W><C-L>
 " Keybinding for yanking and pasting from system keyboard
 noremap <leader>p "+p
 noremap <leader>P "+P
-noremap <leader>z "+y
+noremap <leader>y "+y
 noremap <leader>d "+d
 
 " resize horizontal splits
@@ -165,6 +160,9 @@ vmap <S-CR> <Plug>IMAP_JumpForward
 " ------------------------------------------------------------------------------
 " --------------------------------- General ------------------------------------
 " ------------------------------------------------------------------------------
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
+
 " turn off compat mode for vi
 set nocompatible
 
