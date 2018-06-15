@@ -1,4 +1,0 @@
-# Don't ask to confirm builds
-BUILD_NOCONFIRM=1
-# don't ask to edit build files
-EDITFILES=0
