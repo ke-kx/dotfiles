@@ -1,6 +1,6 @@
 " new line without insert
-noremap <Space>o o<Esc>k
-noremap <Space>O O<Esc>j
+noremap <Space>o o<Esc>
+noremap <Space>O O<Esc>
 
 " yanking and pasting to/from system clipboard
 noremap <Space>p "*p
