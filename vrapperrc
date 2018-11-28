@@ -1,0 +1,22 @@
+" new line without insert
+noremap <Space>o o<Esc>k
+noremap <Space>O O<Esc>j
+
+" yanking and pasting to/from system clipboard
+noremap <Space>p "*p
+noremap <Space>P "*P
+noremap <Space>y "*y
+noremap <Space>d "*d
+
+set autoindent
+
+" Search
+set ignorecase
+set smartcase
+
+" use tab as escape key
+nnoremap <Tab> <Esc>
+vnoremap <Tab> <Esc>gV
+onoremap <Tab> <Esc>
+inoremap <Tab> <Esc>`^
+inoremap <Leader><Tab> <Tab>

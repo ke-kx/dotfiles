@@ -84,8 +84,8 @@ set timeoutlen=500
 let mapleader=" "
 
 " New line without insert
-nnoremap <leader>o o<Esc>k
-nnoremap <leader>O O<ESC>j
+nnoremap <leader>o o<Esc>
+nnoremap <leader>O O<ESC>
 
 " Moving between splits
 nnoremap <C-j> <C-W><C-J>
@@ -113,7 +113,7 @@ cnoremap <C-j> <Down>
 " toggling search highlight setting
 noremap <leader>hs :set hlsearch! <cr>
 
-" use tab as escape key 
+" use tab as escape key
 nnoremap <Tab> <Esc>
 vnoremap <Tab> <Esc>gV
 onoremap <Tab> <Esc>
