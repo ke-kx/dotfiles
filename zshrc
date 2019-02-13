@@ -42,7 +42,7 @@ plugins=(git gitfast archlinux systemd zsh-autosuggestions colored-man-pages sud
 
 
 # User configuration
-export PATH=$PATH:$HOME/repos/scripts:$HOME/repos/overtime-calculator
+export PATH=$PATH:$HOME/repos/scripts:$HOME/repos/overtime-calculator:$HOME/repos/z/z.sh
 
 # Check for system update if script is in PATH
 if system_update_script="$(type -p system-update-prompt.sh)" && [ -n "$system_update_script" ]; then
