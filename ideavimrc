@@ -2,14 +2,19 @@ set timeoutlen=500
 let mapleader=" "
 
 " New line without insert
-nnoremap <leader>o o<Esc>k
-nnoremap <leader>O O<ESC>j
+nnoremap <leader>o o<Esc>
+nnoremap <leader>O O<ESC>
 
 " Keybinding for yanking and pasting from system keyboard
 noremap <leader>p "+p
 noremap <leader>P "+P
 noremap <leader>y "+y
 noremap <leader>d "+d
+noremap <leader>D "+D
 
 " (relative) line numbers
 set relativenumber
+"
+" Search
+set ignorecase
+set smartcase

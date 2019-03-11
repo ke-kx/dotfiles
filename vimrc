@@ -98,6 +98,7 @@ noremap <leader>p "+p
 noremap <leader>P "+P
 noremap <leader>y "+y
 noremap <leader>d "+d
+noremap <leader>D "+D
 
 " resize horizontal splits
 nnoremap <leader>hr :resize
@@ -114,12 +115,12 @@ cnoremap <C-j> <Down>
 noremap <leader>hs :set hlsearch! <cr>
 
 " use tab as escape key
-nnoremap <Tab> <Esc>
-vnoremap <Tab> <Esc>gV
-onoremap <Tab> <Esc>
-cnoremap <Tab> <C-C><Esc>
-inoremap <Tab> <Esc>`^
-inoremap <Leader><Tab> <Tab>
+" nnoremap <Tab> <Esc>
+" vnoremap <Tab> <Esc>gV
+" onoremap <Tab> <Esc>
+" cnoremap <Tab> <C-C><Esc>
+" inoremap <Tab> <Esc>`^
+" inoremap <Leader><Tab> <Tab>
 
 " ------------------------------------------------------------------------------
 " ------------------------------ Plugin Settings -------------------------------
