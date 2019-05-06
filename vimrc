@@ -114,6 +114,14 @@ cnoremap <C-j> <Down>
 " toggling search highlight setting
 noremap <leader>hs :set hlsearch! <cr>
 
+" switch FOO and gFOO for comfortable navigation in wrapped documents
+noremap k gk
+noremap j gj
+noremap 0 g0
+noremap g0 0
+noremap $ g$
+noremap g0 0
+
 " use tab as escape key
 " nnoremap <Tab> <Esc>
 " vnoremap <Tab> <Esc>gV
