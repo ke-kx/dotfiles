@@ -38,7 +38,7 @@ SPACESHIP_VI_MODE_SHOW=false
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git gitfast archlinux systemd zsh-autosuggestions colored-man-pages sudo wd common-aliases svn)
+plugins=(git gitfast archlinux systemd zsh-autosuggestions colored-man-pages sudo wd common-aliases svn gradle)
 
 
 # User configuration
