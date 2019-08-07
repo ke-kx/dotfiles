@@ -1,0 +1,12 @@
+
+keycode 66 = Mode_switch Caps_Lock
+
+! vim navigation arrows
+keycode  43 = h H Left H h H hstroke Hstroke h H
+keycode  44 = j J Down J idiaeresis Idiaeresis dead_belowdot dead_abovedot j J
+keycode  45 = k K Up K oe OE kra ampersand k K
+keycode  46 = l L Right L oslash Oslash lstroke Lstroke l L
+
+! beginning / end of line
+keycode  31 = i I Home I iacute Iacute rightarrow idotless i I
+keycode  42 = g G End G g G eng ENG g G
