@@ -4,6 +4,9 @@ Keeping track of personal settings for zsh, bash and probably vim.
 ## Symlinks
 Link all dotfiles from the repository to their correct location (usually in ~)
 
+## Powerline fonts
+https://github.com/powerline/fonts
+
 ## ZSH
 Install oh-my-zsh:`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 
