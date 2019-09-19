@@ -16,3 +16,5 @@ Also install zsh-autosuggestions by executing `git clone https://github.com/zsh-
 Install vim-plug (https://github.com/junegunn/vim-plug)
 For installing the plugins execute :PlugInstall, for updating :PlugUpdate
 You will need to additionally install the powerline-fonts package to fix the font problems
+
+Remember do download the monokai colorscheme and place it in `~/.vim/colors/` (see https://github.com/sickill/vim-monokai).
