@@ -10,3 +10,7 @@ keycode  46 = l L Right L oslash Oslash lstroke Lstroke l L
 ! beginning / end of line
 keycode  31 = i I Home I iacute Iacute rightarrow idotless i I
 keycode  42 = g G End G g G eng ENG g G
+
+! word navigation
+keycode  25 = w W Next W aring Aring lstroke Lstroke w W
+keycode  56 = b B Prior B b B leftdoublequotemark leftsinglequotemark b B

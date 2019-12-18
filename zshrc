@@ -83,6 +83,7 @@ alias ls='ls --color=auto'
 alias l='ls -lh --group-directories-first'
 alias ll='l -a'
 alias open='open_command'
+alias gfom='git fetch origin master:master'
 
 # typofixes
 alias cd..='cd ..'
