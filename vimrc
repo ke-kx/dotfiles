@@ -236,6 +236,9 @@ set mouse=a
 " Show as much as possible of a wrapped last line, not just "@".
 set display=lastline
 
+" make backspace work like moth other programs
+set backspace=indent,eol,start
+
 " ------------------------------------------------------------------------------
 " ---------------------------------- Appearance --------------------------------
 " ------------------------------------------------------------------------------
