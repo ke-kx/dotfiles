@@ -1,3 +1,9 @@
+" rebind esc because of Mac touch esc key
+" esc in insert mode
+inoremap jk <esc>
+" esc in command mode
+cnoremap jk <C-C>
+
 set timeoutlen=500
 let mapleader=" "
 

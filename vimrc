@@ -76,6 +76,12 @@ call plug#end()
 " --------------------------------- Key bindings -------------------------------
 " ------------------------------------------------------------------------------
 
+" rebind esc because of Mac touch esc key
+" esc in insert mode
+inoremap jk <esc>
+" esc in command mode
+cnoremap jk <C-C>
+
 " switch y and z keys to accustom for German keyboard...
 " noremap z y
 " noremap y z
@@ -242,9 +248,11 @@ set backspace=indent,eol,start
 " ------------------------------------------------------------------------------
 " ---------------------------------- Appearance --------------------------------
 " ------------------------------------------------------------------------------
-set termguicolors
+" set termguicolors
 " Good color alts: monokai (sublime default), one (atom default), OceanicNext
-colo molokai
+" colo molokai
+colorscheme monokai
+
 let g:airline_theme='badwolf' " reset nice airline theme
 " Brighter number column
 hi LineNr guifg=#aaaaaa
