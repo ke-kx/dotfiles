@@ -79,8 +79,10 @@ call plug#end()
 " rebind esc because of Mac touch esc key
 " esc in insert mode
 inoremap jk <esc>
+inoremap JK <esc>
 " esc in command mode
 cnoremap jk <C-C>
+cnoremap JK <C-C>
 
 " switch y and z keys to accustom for German keyboard...
 " noremap z y
