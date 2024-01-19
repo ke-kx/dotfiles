@@ -217,6 +217,8 @@ set invlist
 " Search
 set ignorecase
 set smartcase
+" show search result count
+set shortmess-=S
 
 " folding
 set foldmethod=syntax
