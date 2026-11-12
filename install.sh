@@ -6,6 +6,9 @@ ln -s $dotfiles_dir/bashrc ~/.bashrc
 ln -s $dotfiles_dir/ideavimrc ~/.ideavimrc
 ln -s $dotfiles_dir/zshrc ~/.zshrc
 ln -s $dotfiles_dir/vim ~/.vim
+mkdir -p ~/.config/fish
+ln -s $dotfiles_dir/fish/config.fish ~/.config/fish/config.fish
+ln -s $dotfiles_dir/fish/fish_plugins ~/.config/fish/fish_plugins
 
 
 echo "Installing oh-my-zsh"
@@ -15,6 +18,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # spaceship theme (https://github.com/denysdovhan/spaceship-prompt)
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+echo "Installing fish stuff"
+sudo pacman -S --needed fish fisher zoxide
+fish -c "fisher update"  # installs the plugins listed in fish/fish_plugins
 
 echo "Installing vim stuff"
 sudo pacman -S powerline-fonts
