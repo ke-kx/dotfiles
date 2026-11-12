@@ -1,5 +1,12 @@
 # dotfiles
+
 Keeping track of personal settings for zsh, bash and probably vim.
+
+# Installation
+
+See stuff in `install.sh`.
+Some of it might have to be adapted manually to current system state.
+
 
 ## Symlinks
 Link all dotfiles from the repository to their correct location (usually in ~)

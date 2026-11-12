@@ -7,6 +7,7 @@ ln -s $dotfiles_dir/ideavimrc ~/.ideavimrc
 ln -s $dotfiles_dir/zshrc ~/.zshrc
 ln -s $dotfiles_dir/vim ~/.vim
 
+
 echo "Installing oh-my-zsh"
 sudo pacman -S zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -18,3 +19,4 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 echo "Installing vim stuff"
 sudo pacman -S powerline-fonts
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.vim/colors/monokai.vim --create-dirs https://raw.githubusercontent.com/ku1ik/vim-monokai/refs/heads/master/colors/monokai.vim
